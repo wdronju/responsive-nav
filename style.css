@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #101E2C;
+}
+header{
+    background-color: #193047;
+    padding: 0px 30px;
+}
+.header{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.logo{
+    color: #fff;
+}
+.logo a{
+    color: #7BA5CF;
+}
+
+.menue{
+    display: flex;
+    gap: 30px;
+
+}
+.menue li a{
+    color: #7BA5CF;
+    padding: 10px 20px;
+}
+.menue li a:hover{
+    color: #fff;
+    background-color: #11111133;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+#menuIcon{
+    color: #7BA5CF;
+    font-size: 26px;
+    display: none;
+}
+#close{
+    color: #7BA5CF;
+    font-size: 26px;
+    display: none;
+}
+#close:hover{
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+#menuIcon:hover{
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Floting Menu  */
+
+#flotingMenu{
+    max-width: 250px;
+    background-color: #7BA5CF;
+    height: 100vh;
+    padding: 25px;
+    padding-top: 40px;
+    position: relative;
+    display: none;
+
+}
+#flotingMenu ul li a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin: 15px 0;
+    padding: 10px 30px;
+    transition: .4s;
+}
+#flotingMenu ul li a:hover{
+    background-color: #193047;
+    padding: 10px 30px;
+    transition: .4s;
+    color: #fff;
+}
+
+
+
+
+/* Responsive  */
+
+@media (max-width:800px) {
+    .menue{
+        display: none!important;
+        transition: .4s;
+    }
+    #menuIcon{
+        
+        display: block;
+    }
+    
+}
+@media (min-width:801px) {
+    #close,#flotingMenu,#menuIcon{
+        display: none!important;
+    }
+}
